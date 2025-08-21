@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Foodies Land - Made With Love</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-lg-5">
+            <!-- Clickable logo/image -->
+            <a class="navbar-brand" href="#!" id="logoClick">
+                <img src="assets/fll.png" height="50" width="50" alt="Love Icon">
+            </a>
+
+            <!-- Splash message container -->
+            <div id="splashMessage" class="alert alert-danger d-none mt-2" role="alert"></div>
+
+            <!-- Script with romantic messages -->
+            <script>
+                const messages = [
+                    "You make my heart skip a beat 💓",
+                    "Thinking of you just now 🥰",
+                    "You're my favorite notification 💬💖",
+                    "Love looks good on you 😍",
+                    "Just clicked to say I miss you 💌",
+                    "Your smile is our sunshine ☀️",
+                    "Even the stars envy your glow ✨",
+                    "You're the reason behind our smile 😊",
+                    "Every click reminds us of you ❤️",
+                    "Can't stop falling for you again 💘"
+                ];
+
+                document.getElementById("logoClick").addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const msgBox = document.getElementById("splashMessage");
+
+                    // Pick a random message
+                    const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+
+                    msgBox.textContent = randomMsg;
+                    msgBox.classList.remove("d-none");
+
+                    // Auto-hide after 3 seconds
+                    setTimeout(() => {
+                        msgBox.classList.add("d-none");
+                    }, 1000);
+                });
+            </script>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Items</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/raw/foodies land/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/front.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- Header-->
+    <header class="py-5">
+        <div class="container px-lg-5">
+            <div class="p-4 p-lg-5 rounded-3 text-center"
+                style="background: url('assets/bg.png') no-repeat center center; background-size: cover;">
+                <div class="m-4 m-lg-5 bg-light bg-opacity-75 p-4 rounded">
+                    <h1 class="display-5 fw-bold">Customized Cakes</h1>
+                    <p class="fs-4">Foodies Land providing you best quality premium customize designer cakes according
+                        to your event,</p>
+                    <a class="btn btn-primary btn-lg"
+                        href="https://wa.me/923487274255?text=I'm%20interested%20in%20placing%20an%20order!"
+                        target="_blank">Whatsapp Now!</a>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- Page Content-->
+    <section class="pt-4">
+        <div class="container px-lg-5">
+            <!-- Page Features-->
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/cake.jpg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">Cinnamoroll Custom Designed Cake</h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/Bride.jpeg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">🌸 Fancy Pink Love Cake</h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/Glass.jpeg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">Stylish Black Glasses Cake </h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/cake.jpg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">Cinnamoroll Custom Designed Cake</h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/Bride.jpeg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">🌸 Fancy Pink Love Cake</h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100 text-center">
+                        <div class="card-body p-4 p-lg-5 pt-0 pt-lg-0 d-flex flex-column align-items-center">
+                            <!-- Circle Image -->
+                            <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mt-n4 mb-4"
+                                style="width: 140px; height: 140px;">
+                                <img src="assets/Glass.jpeg" alt="Circular Image"
+                                    style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;">
+                            </div>
+
+                            <!-- Title -->
+                            <h2 class="fs-4 fw-bold">Stylish Black Glasses Cake </h2>
+
+                            <!-- Description -->
+                            <!-- <p class="mb-4">Whether you’re celebrating a little one’s big day or a fan’s love our
+                                Cinnamoroll cake is the ultimate centerpiece to bring joy and smiles.</p> -->
+
+                            <!-- Button -->
+                            <a href="https://wa.me/923487274255?text=Hi!%20I%20want%20to%20order%20this%20Cinnamoroll%20cake.%20Image:%20https://i.postimg.cc/mDfC1d8D/cake.png"
+                                target="_blank" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Foodies Land 2025</p>
+            <p class="m-0 text-center text-white">Designed By: Saqib Hussain </p>
+            <p class="m-0 text-center text-white">Order Your Website Now +923434718475</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
