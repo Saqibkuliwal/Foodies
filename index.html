@@ -17,57 +17,32 @@
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container px-lg-5">
-            <!-- Clickable logo/image -->
-            <a class="navbar-brand" href="#!" id="logoClick">
-                <img src="assets/fll.png" height="50" width="50" alt="Love Icon">
-            </a>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-lg-5">
+        <!-- Clickable logo/image -->
+        <a class="navbar-brand" href="#!" id="logoClick">
+            <img src="assets/fll.png" height="50" width="50" alt="Love Icon">
+        </a>
 
-            <!-- Splash message container -->
-            <div id="splashMessage" class="alert alert-danger d-none mt-2" role="alert"></div>
+        <!-- Splash message container -->
+        <div id="splashMessage" class="alert alert-danger d-none mt-2" role="alert"></div>
 
-            <!-- Script with romantic messages -->
-            <script>
-                const messages = [
-                    "You make my heart skip a beat 💓",
-                    "Thinking of you just now 🥰",
-                    "You're my favorite notification 💬💖",
-                    "Love looks good on you 😍",
-                    "Just clicked to say I miss you 💌",
-                    "Your smile is our sunshine ☀️",
-                    "Even the stars envy your glow ✨",
-                    "You're the reason behind our smile 😊",
-                    "Every click reminds us of you ❤️",
-                    "Can't stop falling for you again 💘"
-                ];
+        <!-- Navbar toggler button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                document.getElementById("logoClick").addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const msgBox = document.getElementById("splashMessage");
-
-                    // Pick a random message
-                    const randomMsg = messages[Math.floor(Math.random() * messages.length)];
-
-                    msgBox.textContent = randomMsg;
-                    msgBox.classList.remove("d-none");
-
-                    // Auto-hide after 3 seconds
-                    setTimeout(() => {
-                        msgBox.classList.add("d-none");
-                    }, 1000);
-                });
-            </script>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Items</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Items</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
